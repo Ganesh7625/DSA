@@ -1,0 +1,36 @@
+import java.io.*; // for handling input/output
+import java.util.*; // contains Collections framework
+
+// don't change the name of this class
+// you can add inner classes if needed
+class Main {
+    public static void main (String[] args) {
+        Scanner sc - new Scanner(System.in);
+
+        int r1 = sc.nextInt();
+        int c1 = sc.nextInt();
+        int matrix1[][] = new int[r1][c1];
+        for(int raw=0; raw<r1; raw++){
+            for(int col=0; col<c1; col++){
+                matrix1[r][c] = sc.nextInt();
+            }
+        }
+
+        int r2 = sc.nextInt();
+        int c2 = sc.nextInt();
+        int matrix2[][] = new int[r2][c2];
+        for(int raw=0; raw<r2; raw++){
+            for(int col=0; col<c2; col++){
+                matrix2[r][c] = sc.nextInt();
+            }
+        }
+
+        for(int raw=0; raw<r1; raw++){
+            for(int col=0; col<c1; col++){
+                int ans = matrix1[raw][col]+matrix2[raw][col];
+                System.out.print(ans + " ");
+            }
+            System.out.println();
+        }
+    }
+}
